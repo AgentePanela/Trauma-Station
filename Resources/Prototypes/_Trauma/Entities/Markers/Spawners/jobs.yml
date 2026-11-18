@@ -42,3 +42,17 @@
     - state: green
     - state: rancher
       sprite: _Trauma/Markers/jobs.rsi
+
+# Security
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: SpawnPointArmorer
+  name: armorer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: Armorer
+  - type: Sprite
+    layers:
+    - state: green
+    - state: security_officer

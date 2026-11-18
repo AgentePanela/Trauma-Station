@@ -1,0 +1,41 @@
+- type: job
+  id: Armorer
+  name: job-name-armorer
+  description: job-description-armorer
+  playTimeTracker: JobArmorer
+  requirements:
+  - !type:RoleTimeRequirement
+    role: JobSecurityOfficer
+    time: 3h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 5h
+  - !type:DepartmentTimeRequirement
+    department: Engineering
+    time: 1.5h
+  startingGear: ArmorerGear
+  icon: "JobIconArmorer"
+  supervisors: job-supervisors-hos
+  guides: [ Security ]
+  access:
+  - Security
+  - Brig
+  - Armory
+  - Maintenance
+  - Engineering
+  - Cargo
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: SecurityStaff
+
+- type: startingGear
+  id: ArmorerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpackSecurity
+    ears: ClothingHeadsetSecurity
+    id: ArmorerPDA

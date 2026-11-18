@@ -138,6 +138,9 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 4h # muh intermediary role, also kinda has to know a bit more law.
+    - !type:RoleTimeRequirement
+      role: JobArmorer # bro must know how a weapon is made
+      time: 3h
     # Silicon
     StationAi:
     - !type:RoleTimeRequirement

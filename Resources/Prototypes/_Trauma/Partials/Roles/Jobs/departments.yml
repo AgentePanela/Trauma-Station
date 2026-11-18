@@ -54,6 +54,7 @@
   roles:
   - Brigmedic
   - SecurityClown
+  - Armorer
 
 - type: department
   id: Science

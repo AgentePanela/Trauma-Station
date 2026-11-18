@@ -310,3 +310,25 @@
       amount: 2
     - id: RiotLaserShield
     - id: SecBreachingHammer
+
+# admorer
+
+- type: entity
+  parent: LockerArmorer
+  id: LockerArmorerFilled
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: LockerFillArmorer
+
+- type: entityTable
+  id: LockerFillArmorer
+  table: !type:AllSelector
+    children:
+    - id: ClothingHeadsetSecurity
+    - id: ClothingHandsGlovesColorBlack
+    - id: ClothingEyesGlassesSecurity
+    - id: ClothingBeltUtilityFilled
+    - id: ClothingHeadHatWelding

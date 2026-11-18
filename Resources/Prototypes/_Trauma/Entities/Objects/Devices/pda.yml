@@ -161,3 +161,25 @@
   - type: PdaBorderColor
     borderColor: "#eb7732"
     accentHColor: "#2e2e2e"
+
+- type: entity
+  parent: BaseSecurityPDA
+  id: ArmorerPDA
+  name: armorer PDA
+  description: Smells like gunpowder...
+  components:
+  - type: Pda
+    id: ArmorerIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-armorer
+  - type: Sprite
+    sprite: _Trauma/Objects/Devices/pda.rsi
+    state: pda-armorer
+  - type: Icon
+    sprite: _Trauma/Objects/Devices/pda.rsi
+    state: pda-armorer
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#5C5C5C"

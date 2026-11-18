@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Secure chapel locker edited by Reestock from TG locker textures.",
+    "copyright": "Secure chapel locker edited by Reestock from TG locker textures. Armorer locker from Chapel Locker resprited by AgentePanela",
     "size": {
         "x": 32,
         "y": 32
@@ -36,6 +36,15 @@
         },
         {
             "name": "locked"
+        },
+        {
+            "name": "armorer"
+        },
+        {
+            "name": "armorer_door"
+        },
+        {
+            "name": "armorer_open"
         }
     ]
 }

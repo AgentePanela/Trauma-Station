@@ -80,3 +80,16 @@
       sprite: _Trauma/Objects/Misc/id_cards.rsi
   - type: PresetIdCard
     job: Rancher
+
+- type: entity
+  parent: IDCardStandard
+  id: ArmorerIDCard
+  name: armorer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idarmorer
+      sprite: _Trauma/Objects/Misc/id_cards.rsi
+  - type: PresetIdCard
+    job: Armorer
